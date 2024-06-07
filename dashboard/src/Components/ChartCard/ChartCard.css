@@ -1,0 +1,9 @@
+.ChartCard{
+width: 85%;
+height: 350px;
+flex-shrink: 0;
+border-radius: 20px;
+background: var(--white);
+box-shadow: 0px 2px 6px 0px rgba(13, 10, 44, 0.08);
+margin: 0 auto 1.5rem auto;
+}

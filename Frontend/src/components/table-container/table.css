@@ -1,0 +1,123 @@
+.table-wrapper {
+  box-shadow: 0px 0px 35px -17px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 25px !important;
+  padding: 0 15px !important;
+  border: 1px solid #546672;
+}
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 475px) {
+  .header_container {
+    flex-direction: column;
+  }
+  .btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .btn-wrapper button {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+}
+.projectName {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.table-wrapper thead {
+  background-color: #fff;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  position: sticky !important;
+  top: 0;
+  padding: 20px 25px;
+  z-index: 1;
+  border: none !important;
+  overflow: auto !important;
+  padding: 0 15px !important;
+}
+.header-wrapper th {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 15px 15px !important;
+  border-bottom: #dadada 1px solid !important;
+}
+.header-wrapper th div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.string-wrapper {
+  width: 100%;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin: 1rem auto;
+  padding: 15px 15px;
+  box-shadow: 0px 0px 35px -17px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.string-wrapper td {
+  font-size: 12px;
+}
+.string-wrapper tr {
+  height: 70px;
+}
+.header-wrapper span {
+  height: 30px;
+  width: 1px;
+  background-color: #e0e0e0;
+}
+
+#control :nth-child(1) {
+  margin-right: 2px;
+}
+#control :nth-child(2) {
+  margin-left: 2px;
+}
+.string-wrapper input {
+  border-radius: 3px;
+  border: 1px #cdcdcd solid;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 5px;
+  width: 100px;
+}
+.string-wrapper input:focus {
+  border: 1.5px #546672 solid;
+  outline: none;
+}
+.table-responsive {
+  max-height: 520px;
+  margin-top: 1rem;
+}
+::-webkit-scrollbar {
+  width: 7px !important;
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cdcdcd !important;
+  border-radius: 6px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #cacaca !important;
+}
+.select_container {
+  /* width: 100% !important; */
+}

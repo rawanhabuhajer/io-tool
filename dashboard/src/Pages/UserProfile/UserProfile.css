@@ -1,0 +1,161 @@
+.user__container{  
+display: grid;
+grid-template-columns: 0.17fr 1.8fr 0.7fr;
+grid-template-rows: 0.3fr 1.7fr;
+grid-auto-columns: 1fr;
+gap: 0px 5px;
+grid-auto-flow: row;
+grid-template-areas:
+"user__sidebar user__top user__top"
+"user__sidebar user__main user__main";
+}
+.user__sidebar { 
+grid-area: user__sidebar; 
+}
+.user__top { 
+grid-area: user__top; 
+}
+.user__main { 
+grid-area: user__main; 
+}
+/* .user__profile{
+grid-area: user__profile; 
+} */
+.userProfile{
+margin-left: 2rem;
+font-size:20px;
+font-weight: 600;
+}
+/* .userProfile__chart{
+width: 30%;
+height: 100px;
+flex-shrink: 0;
+border-radius: 20px;
+background: var(--white);
+box-shadow: rgba(240, 240, 240, 0.404) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+}
+.userProfile__charts__container{
+display: flex;
+align-items: center;
+gap: 1.5rem;
+margin-left: 2rem;
+margin-top: 1rem;
+}
+.userProfile__chart{
+padding-left: 1rem;
+padding-top: 1rem;
+}
+.userProfile__chart :nth-child(1){
+font-size: 14px;
+color: gray;
+}
+.userProfile__chart :nth-child(2){
+font-size: 18px;
+font-weight: 600;
+color: var(--black);
+
+} */
+/* .userProfile__chart:nth-child(3){
+font-size: 24px;
+font-weight: 700;
+color: var(--black);
+margin-top: 0.5rem;
+}
+
+#userProfile__chart-1{
+margin-left:3rem;
+} */
+.user_booking_list_container{
+width: 70%;
+height: fit-content;
+padding-top: 1rem;
+padding-bottom: 2rem;
+flex-shrink: 0;
+border-radius: 8px;
+background: #FFF;
+margin: 2rem 0 0 2rem;
+box-shadow:  rgba(240, 240, 240, 0.404) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.user__list__title{
+width: 96%;
+height: 50px;
+border: 1px solid #FAFAFA;
+background: #FFF;
+margin: 2rem  auto 1rem auto;
+display: flex;
+align-items: center;
+font-weight: 600;
+color: #3b3b3b;
+}
+.user__list__title div{
+width: 14.28%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+/* .user__profile{
+width: 90%;
+height: 720px;
+flex-shrink: 0;
+border-radius: 8px;
+background: #FFF;
+box-shadow:  rgba(240, 240, 240, 0.404) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+} */
+
+/* Style for the form container */
+.user_booking_list_container {
+  width: 40%;
+  margin: auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow:  rgba(240, 240, 240, 0.404) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+}
+
+/* Style for the form itself */
+form {
+  padding: 10px;
+}
+
+/* Style for the form heading */
+h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Style for the form sections */
+section {
+  margin-top: 20px;
+}
+
+/* Style for the form rows */
+.form-row {
+  margin-bottom: 15px;
+}
+
+/* Style for the input fields */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Style for the submit button */
+.form-btn {
+  padding: 10px 20px;
+  background-color: #4481EB;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Hover effect for the submit button */

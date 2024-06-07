@@ -1,0 +1,205 @@
+Color variables
+:root {
+  --light-red: hsl(0, 100%, 67%);
+  --orange-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavendar: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+  --font-size: 18px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 28px 0 0 28px; */
+}
+.summary-lists {
+  padding: 0 !important;
+}
+.Continue {
+  margin: 0 !important;
+}
+/* categoryCard styles */
+.categoryCard {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  box-shadow: 4px 4px 25px 0px #dadada;
+  border-radius: 0;
+  width: 100%;
+  height: fit-content;
+}
+
+/* categoryCard left styles */
+.categoryCard-left {
+  background: var(--dark-gray-blue);
+  border-radius: 0 0 15px 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  width: 100%;
+}
+
+.categoryCard-left h4 {
+  color: var(--light-lavendar);
+  text-align: center;
+  font-size: 20px;
+}
+
+.categoryCard-left .score {
+  background-image: var(--white);
+  width: 50%;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(25, 25, 25, 0.5) 0px 5px 10px 0px inset;
+}
+
+.categoryCard-left .score h1 {
+  font-size: 50px;
+  color: var(--white);
+}
+
+.categoryCard-left .score span {
+  color: var(--light-lavendar);
+}
+
+.categoryCard-left .score-content h2 {
+  font-size: 24px;
+  color: var(--white);
+  text-align: center;
+}
+
+.categoryCard-left .score-content p {
+  margin-top: 12px;
+  color: var(--light-lavendar);
+  text-align: center;
+}
+
+/* categoryCard right styles */
+.categoryCard-right {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 100%;
+}
+
+.categoryCard-right h2 {
+  color: var(--dark-gray-blue);
+}
+
+.categoryCard-right ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.categoryCard-right ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.categoryCard-right ul li:nth-of-type(1) {
+  background: hsl(0, 100%, 67%, 0.1);
+}
+
+.categoryCard-right ul li:nth-of-type(2) {
+  background: hsl(39, 100%, 56%, 0.1);
+}
+
+.categoryCard-right ul li:nth-of-type(3) {
+  background: hsl(166, 100%, 37%, 0.1);
+}
+
+.categoryCard-right ul li:nth-of-type(4) {
+  background: hsl(234, 85%, 45%, 0.1);
+}
+
+.categoryCard-right ul li p {
+  font-weight: 500;
+}
+
+.categoryCard-right ul li:nth-of-type(1) p {
+  color: var(--light-red);
+}
+
+.categoryCard-right ul li:nth-of-type(2) p {
+  color: var(--orange-yellow);
+}
+
+.categoryCard-right ul li:nth-of-type(3) p {
+  color: var(--green-teal);
+}
+
+.categoryCard-right ul li:nth-of-type(4) p {
+  color: var(--cobalt-blue);
+}
+
+.categoryCard-right ul li .li-right p {
+  color: var(--light-lavendar);
+}
+
+.categoryCard-right ul li .li-right p b {
+  color: var(--dark-gray-blue);
+}
+
+.seeMore {
+  background: var(--dark-gray-blue);
+  padding: 12px;
+  text-align: center;
+  color: var(--white);
+  text-decoration: none;
+  font-size: var(--font-size);
+  border-radius: 30px;
+  margin: 0;
+}
+.seeMore:hover {
+  color: var(--white);
+}
+/* Media query for larger screens */
+@media (min-width: 550px) {
+  body {
+    height: 100vh;
+  }
+
+  main .categoryCard {
+    flex-direction: row;
+    width: 550px;
+    border-radius: 15px;
+  }
+
+  main .categoryCard .categoryCard-left {
+    width: 50%;
+    border-radius: 15px;
+  }
+
+  main .categoryCard .categoryCard-right {
+    width: 50%;
+  }
+}

@@ -1,0 +1,33 @@
+.button-wrapper {
+  border-radius: 20px;
+  border: 1px solid #FFA500   ;
+  background-color: #FFA500   ;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 30px;
+  letter-spacing: 1px;
+  transition: transform 80ms ease-in;
+  box-shadow: #54667297 0 10px 20px -10px;
+}
+@media (max-width: 475px) {
+  .button-wrapper {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+  .c-btn {
+    width: 100% !important;
+  }
+}
+.button-wrapper:active {
+  transform: scale(0.95);
+}
+
+.button-wrapper:focus {
+  outline: none;
+}
+
+.button-wrapper.ghost {
+  background-color: transparent;
+  border-color: #ffffff;
+}
